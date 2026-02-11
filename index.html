@@ -2,10 +2,12 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Eu Te Amo, Bebezinha Grandão 💖</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu Te Amo, Minha Princesa 💖</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
         * {
             margin: 0;
             padding: 0;
@@ -14,108 +16,167 @@
         }
 
         body {
-            min-height: 100vh;
             background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+        }
+
+        /* HERO */
+        .hero {
+            height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-        }
-
-        .card {
-            background: #ffffffee;
-            padding: 40px;
-            border-radius: 25px;
-            max-width: 600px;
             text-align: center;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-            animation: float 4s ease-in-out infinite;
+            padding: 20px;
+            background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
+                        url("foto1.jpg") center/cover no-repeat;
         }
 
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
+        .hero h1 {
+            font-family: 'Great Vibes', cursive;
+            font-size: 4rem;
+            color: #e63946;
         }
 
-        h1 {
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 15px;
+            max-width: 600px;
+        }
+
+        /* SEÇÕES */
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .title {
             font-size: 2.5rem;
             color: #e63946;
-            margin-bottom: 15px;
+            margin-bottom: 40px;
         }
 
-        h2 {
-            font-size: 1.4rem;
-            color: #ff4d6d;
-            margin-bottom: 25px;
+        /* GALERIA */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
         }
 
-        p {
-            font-size: 1.1rem;
-            color: #444;
-            margin-bottom: 15px;
-            line-height: 1.6;
+        .gallery img {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: 0.4s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* DECLARAÇÃO */
+        .love-text {
+            max-width: 800px;
+            margin: auto;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        /* FUTURO */
+        .future {
+            background: #ffffffaa;
+            border-radius: 30px;
+            max-width: 900px;
+            margin: auto;
+            padding: 50px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
         }
 
         .hearts {
-            font-size: 1.8rem;
-            margin: 20px 0;
+            font-size: 2rem;
+            margin-top: 20px;
             animation: pulse 1.5s infinite;
         }
 
         @keyframes pulse {
             0% { transform: scale(1); }
-            50% { transform: scale(1.15); }
+            50% { transform: scale(1.2); }
             100% { transform: scale(1); }
         }
 
-        .footer {
-            margin-top: 30px;
+        footer {
+            padding: 30px;
+            text-align: center;
             font-size: 1rem;
-            color: #555;
         }
 
-        .footer span {
+        footer span {
             color: #e63946;
-            font-weight: 600;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <h1>Eu te amo, Bebezinha LINDA 💖</h1>
-        <h2>Minha princesinha, minha melhor escolha, minha futura esposa 💍</h2>
-
+    <!-- CAPA -->
+    <div class="hero">
+        <h1>Eu te amo, minha Bebezinha 💖</h1>
         <p>
-            Você é o meu lugar seguro, meu lar, logo logo vou ter minha princesinha como esposa, o meu sorriso pertence a vc, eu sou muito grato por ter minha princesinha linda, 
-            logo logo estamos com nossa casinha linda, morando juntinhos, fazendo tudo juntinhos...
+            Você é meu lugar seguro, minha melhor escolha, minha futura esposa.
+            Meu sorriso é seu, meu coração é seu, minha vida é com você.
         </p>
-
-        <p>
-            Eu amo o seu jeitinho, o seu sorriso, o seu abraço que acalma, 
-            estar ao seu lado me acalma o coração, minha mente fica limpa, eu amo estar com vc bebezinha.
-        </p>
-
-        <p>
-            Prometo cuidar de você, te respeitar, te amar nos dias bons
-            e ser seu apoio nos dias difíceis, estar com vc todos os dias, acordar e dormir ao seu ladinho, ajudar meu amorzinho nas suas coisinhas, 
-            irmos passear, congregar, viajar juntinhos, sempre eu e vc, para sempre.
-        </p>
-
-        <div class="hearts">💗💞💖💘💝💞💗</div>
-
-        <p>
-            Que nosso amor continue crescendo, ficando mais forte,
-            mais bonito e mais nosso a cada dia.
-        </p>
-
-        <div class="footer">
-            Com todo o meu amor,  
-            <br>
-            <span>para sempre seu 🤍</span>
-        </div>
     </div>
+
+    <!-- GALERIA DE FOTOS -->
+    <section>
+        <h2 class="title">Nossos Momentos 📸</h2>
+        <div class="gallery">
+            <img src="foto1.jpeg" alt="Nós dois">
+            <img src="foto2.jpeg" alt="Momento especial">
+            <img src="foto3.jpeg" alt="Nosso amor">
+            <img src="foto5.jpeg" alt="Felicidade">
+        </div>
+    </section>
+
+    <!-- DECLARAÇÃO -->
+    <section>
+        <h2 class="title">Minha Declaração 💌</h2>
+        <div class="love-text">
+            <p>
+                Eu amo o seu jeitinho, o seu sorriso, o seu abraço que acalma.
+                Estar ao seu lado deixa minha mente leve e meu coração em paz.
+                Você é meu presente de Deus, minha companheira, minha princesa.
+            </p>
+
+            <p>
+                Prometo cuidar de você, te respeitar, te amar nos dias bons
+                e ser seu apoio nos dias difíceis. Quero acordar ao seu lado,
+                construir nossa casinha, viajar juntinhos, viver tudo juntinhos.
+                Sempre eu e você. Para sempre.
+            </p>
+        </div>
+    </section>
+
+    <!-- FUTURO -->
+    <section>
+        <div class="future">
+            <h2 class="title">Nosso Futuro 💍</h2>
+            <p>
+                Logo estaremos morando juntinhos, construindo nossa família,
+                vivendo nossos sonhos e crescendo lado a lado.
+                Que nosso amor continue ficando mais forte, mais bonito e mais nosso a cada dia.
+            </p>
+            <div class="hearts">💗💞💖💘💝</div>
+        </div>
+    </section>
+
+    <footer>
+        Com todo o meu amor, <br>
+        <span>para sempre seu 🤍</span>
+    </footer>
 
 </body>
 </html>
-
